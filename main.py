@@ -3,7 +3,10 @@ import logging
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
+    def start(update: Update, context: CallbackContext) -> None:
+    """Sends explanation on how to use the bot."""
     update.message.reply_text('Hi! Use /set <seconds> to set a timer')
+    
     def main() -> None:
     """Run bot."""
     # Create the Updater and pass it your bot's token.
