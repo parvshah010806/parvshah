@@ -20,9 +20,7 @@ logger = logging.getLogger(__name__)
 def start(update: Update, context: CallbackContext) -> None:
     """Sends explanation on how to use the bot."""
     update.message.reply_text('Hi! Use /set <seconds> to set a timer')
- def main() -> None:
-    """Run bot."""
-    # Create the Updater and pass it your bot's token.
+ 
     updater = Updater("5227297003:AAEwSnVl-aCGUYGbj92L4m1z6GWTh3ggGa8")
 
     dispatcher = updater.dispatcher
