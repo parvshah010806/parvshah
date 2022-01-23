@@ -17,10 +17,8 @@ logger = logging.getLogger(__name__)
 # since context is an unused local variable.
 # This being an example and not having context present confusing beginners,
 # we decided to have it present as context.
-def start(update: Update, context: CallbackContext) -> None:
-    """Sends explanation on how to use the bot."""
-    
-    update.message.reply_text('Hi! Use /set <seconds> to set a timer')
+def start(update: Update, context: CallbackContext):
+    context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
  
 updater = Updater("5227297003:AAEwSnVl-aCGUYGbj92L4m1z6GWTh3ggGa8")
 
