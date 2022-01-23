@@ -13,10 +13,13 @@ from telegram import Update
 from telegram.ext import CallbackContext
 
 
-def start(update Update, context: CallbackContext
+from telegram.ext import MessageHandler, Filters
 
-):
-context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
+def echo(update: Update, context: CallbackContext):
+    context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
+
+echo_handler = MessageHandler(Filters.text & (~Filters.command), echo)
+dispatcher.add_handler(echo_handler)
 
 from telegram.ext import CommandHandler
 
