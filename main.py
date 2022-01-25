@@ -1,10 +1,10 @@
 import smtplib, ssl
 
-port = 465  # For starttls
+port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
 sender_email = "djdnensidoclcmxn@gmail.com"
 receiver_email = "nimisha11668@gmail.com"
-password = input("Easyfreezy@456:")
+password = input("password:")
 message = """\
 Subject: Hi there
 
