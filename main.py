@@ -1,4 +1,4 @@
-import speechrecognition as sr
+import speechRecognition as sr
 import pyttsx3
 import datetime
 import wikipedia
