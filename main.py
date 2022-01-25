@@ -5,7 +5,7 @@ email['from'] = 'parv'   ## Person who is sending
 email['to'] = 'nimisha11668@gmail.com'       ## Whom we are sending
 email['subject'] = 'xyz subject'  ## Subject of email
 email.set_content("Xyz content of email") ## content of email
-with smtlib.SMTP(host='smtp.gmail.com',port=587)as smtp:     
+with smtplib.SMTP(host='smtp.gmail.com',port=587)as smtp:     
 ## sending request to server 
     
     smtp.ehlo()          ## server object
