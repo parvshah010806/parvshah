@@ -1,5 +1,6 @@
 import smtplib 
 from email.message import EmailMessage
+connect()
 email = EmailMessage() ## Creating a object for EmailMessage
 email['from'] = 'parv'   ## Person who is sending
 email['to'] = 'nimisha11668@gmail.com'       ## Whom we are sending
