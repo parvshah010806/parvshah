@@ -3,7 +3,7 @@ import csv, smtplib, ssl
 message = """Subject: Your grade
 
 Hi {name}, your grade is {grade}"""
-from_address = "my@gmail.com"
+from_address = "djdnensidoclcmxn@gmail.com"
 password = input("Type your password and press enter: ")
 
 context = ssl.create_default_context()
